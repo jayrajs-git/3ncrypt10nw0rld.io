@@ -2,7 +2,7 @@
 This Website is built for Encrypting and Decrypting strings.
 One can use this for encrypting and decrypting their messages!!
 
-This Whole encryption is named as Danny's Encryption.
+This Encryption Technique is named as Danny's Encryption.
 
 5 layer encryption is used !
 See PPT provided to understand how this works !!
