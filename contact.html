@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact us</title>
+<meta name="Encryption World" content="">
+<meta name="D@nny" content="">
+  
+
+<link rel="shortcut icon" type="image/x-icon" href="img/fav.ico">
+
+<link rel="stylesheet" type="text/css"  href="css/het.css">
+<link rel="stylesheet" type="text/css" href="css/bhavin.css">
+<link href="css/chokshi.css" rel="stylesheet" media="screen">
+<link href="css/jaddu.css" rel="stylesheet" media="screen">
+<link href="css/jayraj.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css"  href="css/world.css">
+
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+</head>
+<body class="page">
+
+
+<nav id="top-menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img src="img/logo8.png" height="130" width="130"><span><font color="#F5DA81">Encryption world</font></span></a> </div>
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+      
+      <a id="nav-icon"> <span></span> <span></span> <span></span> </a> 
+      
+      <ul id="nav-top" class="nav navbar-nav navbar-right">
+		   <li><a href="index.html" class="page-scroll">Home</a></li>
+			<li><a href="main.html" class="page-scroll">Cryptography</a></li>
+			<li><a href="contact.html" class="page-scroll">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+<div id="page-banner" style="background-image: url(img/contact.gif);">
+  <div class="content  wow fdeInUp">
+    <div class="container ">
+      <h1>Contact</h1>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="page-body">
+  <div class="container">
+    <div class="row"> 
+      
+      <div class="col-md-offset-3 col-md-6 page-block">
+        <h1>Any questions or something?</h1>
+        <p><b>Mail us</b>: <a href="mailto:chauhansaheb90@gmail.com">Click Here</a></p>
+            <form method="POST" autocomplete="off" name="google-sheet" style="padding-bottom:80px">
+                <div class="form-group">
+                    <label for="exampleInputName">Name</label>
+                    <input type="text" onkeypress="return /[A-Za-z ]/i.test(event.key)" maxlength="30" minlength="3" name="Name" class="form-control" id="exampleInputName" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="text" onkeypress="return /[a-z0-9@.]/i.test(event.key)" maxlength="40" minlength="15" name="Email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Subject</label>
+                    <input type="text" onkeypress="return /[A-Za-z0-9 ]/i.test(event.key)" maxlength="100" minlength="10" name="Subject" class="form-control" id="exampleInputPassword1" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputMessage">Message</label>
+                    <textarea name="Message" oninvalid="this.setCustomValidity('Type a message')" onkeypress="return /[A-Za-z0-9 -~]/i.test(event.key)" maxlength="1000" minlength="5" placeholder="Add your message" required></textarea>
+                </div>
+      <br/>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      
+   
+    </div>
+  </div>
+ </div>
+</div>
+   <div class="clearfix"></div>
+   <footer id="bottom-footer">
+    <div class="col-md-4 col-sm-4 col-xs-12"> 
+      <p class="copyright">© 2022 <b>Encryption World</b>. All rights reserved</p>        <!--/copyright--> 
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+
+<script type="text/javascript" src="js/bhavin.js"></script> 
+<script type="text/javascript" src="js/danny.js"></script> 
+<script type="text/javascript" src="js/jaddu.js"></script> 
+<script src="js/het.js"></script> 
+<script src="js/chokshi.js"></script> 
+<script type="text/javascript" src="js/main.js"></script> 
+<script src="js/jayraj.js"></script>
+
+  <script>
+     const scriptURL = 'https://script.google.com/macros/s/AKfycbyY-Aw8UIaOoAaCUuZLiTYePnKjEKy9yvZpcVKYqGSEjrW4j9mlPbC5KoKXo7n42uMgOQ/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+   </script>
+</body>
+</html>

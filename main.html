@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encrypt</title>
+<meta name="Encryption World" content="">
+<meta name="D@nny" content="">
+
+
+<link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" type="text/css"  href="css/het.css">
+<link rel="stylesheet" type="text/css" href="css/bhavin.css">
+<link href="css/chokshi.css" rel="stylesheet" media="screen">
+<link href="css/jaddu.css" rel="stylesheet" media="screen">
+<link href="css/jayraj.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css"  href="css/world.css">
+
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body class="page">
+
+
+<nav id="top-menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html"><img src="img/logo8.png" position="img-responsive" height="130" width="130"><span><font color="#58FAAC">Encryption world</font></span></a> </div>
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+      <a id="nav-icon"> <span></span> <span></span> <span></span> </a> 
+      
+      <ul id="nav-top" class="nav navbar-nav navbar-right">
+		   <li><a href="index.html" class="page-scroll">Home</a></li>
+			<li><a href="main.html" class="page-scroll">Cryptography</a></li>
+			<li><a href="contact.html" class="page-scroll">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="page-banner" style="background-image: url(img/main-back.gif);">
+  <div class="content  wow fdeInUp">
+    <div class="container ">
+      <h1>Cryptography </h1>
+    </div>
+  </div>
+</div>
+
+<!-- encryption form start -->
+
+<br><br><br>  <b><label class="ironman1">*Only English Language is allowed.</label></b>
+              <input id="txboxin" name="username" type="text" placeholder="Enter your string here" class="form-control mx-sm-6" aria-describedby="passwordHelpInline" onkeyup="supported(this)" required>
+              <input id="tan" type="image" src="img/cancel.png" onclick="document.getElementById('txboxin').value = ''">
+              <br><br>
+              <input type="text" id="ek1" placeholder="Click on key icon to generate secure key" class="form-control mx-sm-6" aria-describedby="passwordHelpInline">
+              <input type="image" id="generateButton" src="img/refresh.png"><br><br>
+
+              <small id="passwordHelpInline" class="text-muted">
+              <b id="pikachu" >Key strength :</b> <span id="strength-text"></span>
+              </small>
+              <div id="pokemon" class="progress progress-sm">
+                <div class="progress-bar bg-secondary" id="strength-meter" role="progressbar" style="width: 4;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="4"></div>
+                </div>
+              </div>
+                
+              <button type="button" class="btn btn-outline-dark" id="encryptBtn"  onclick="encrypt()">Encrypt</button>
+              <button type="button" class="btn btn-outline-dark" id="decryptBtn"  onclick="decrypt()">Decrypt</button>
+              <br><br><br>
+                
+              <input id="txboxout" type="text" placeholder="Cipher-text" class="form-control" class="form-control mx-sm-6" aria-describedby="passwordHelpInline" readonly >
+              <input type="image" id="dhan" src="img/copy.png" onclick="myFunction()">
+
+              <div id="error"></div>
+
+<!-- encryption form end -->
+
+<div id="page-body">
+  <div class="container">
+    <div class="row wow fdeInUp"> 
+      <div class="col-md-12 page-block">
+       
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<footer id="bottom-footer">
+      <div class="col-md-4 col-sm-4 col-xs-12"> 
+        <p class="copyright">© 2022 <b>Encryption World</b>. All rights reserved</p>        <!--/copyright--> 
+      </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/bhavin.js"></script> 
+<script type="text/javascript" src="js/danny.js"></script> 
+<script type="text/javascript" src="js/jaddu.js"></script> 
+<script src="js/het.js"></script> 
+<script src="js/chokshi.js"></script> 
+<script type="text/javascript" src="js/main.js"></script> 
+<script src="js/jayraj.js"></script>
+
+<script src="js/bhavin2.js"></script> 
+<script src="js/chokshi2.js"></script> 
+
+
+  </script>
+  <script>
+    function supported(input) {
+      var regex = /[^a-z0-9 -~]/gi;
+      input.value = input.value.replace(regex, "");
+    }
+  </script>
+</body>
+</html>
