@@ -1,6 +1,6 @@
 # Encryption-World
 
-website : https://jayrajs-git.github.io/EncryptionWorld.github.io/
+Link : https://jayrajs-git.github.io/EncryptionWorld.github.io/
 
 This Website is built for Encrypting and Decrypting strings.
 One can use this for encrypting and decrypting their messages!!
