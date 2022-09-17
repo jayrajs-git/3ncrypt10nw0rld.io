@@ -23,8 +23,6 @@ Provided are the names for Algorithms,
 4.arjun
 5.bhavin
 
-Report is also attached for further studies.
-
 Thankyou
 
 @Jayrajsinh Chauhan
